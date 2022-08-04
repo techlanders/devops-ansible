@@ -7,9 +7,9 @@ resource "aws_instance" "myawsserver" {
   key_name = "gagan-import"
 
   tags = {
-    Name = "Gagan-DevOps-server"
+    Name = "pradeep-DevOps-server"
     env = "Prod"
-    owner = "Gagandeep Singh"
+    owner = "pradeep"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
