@@ -8,7 +8,7 @@ resource "aws_instance" "myawsserver" {
 
   tags = {
     Name = "Gagan-DevOps-server"
-    env = "Lab"
+    env = "Dev"
     owner = "Gagandeep Singh"
   }
   provisioner "local-exec" {
