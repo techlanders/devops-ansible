@@ -4,7 +4,7 @@
     - name: install httpd
       package: name=httpd state=installed
     - name: configure
-      shell: "echo Welcome to My Server - DevOps IaC CD pipeline > /var/www/html/index.html"
+      shell: "echo Welcome to My Server - DevOps IaC IBM pipeline > /var/www/html/index.html"
     - name: start service
       service: name=httpd state=started
     - name: add user
